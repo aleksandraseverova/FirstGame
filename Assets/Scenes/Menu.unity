@@ -303,6 +303,10 @@ PrefabInstance:
       value: "\u0421\u0435\u0432\u0435\u0440\u043E\u0432\u0430 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u0430
         \u0438 \u0420\u0443\u0441\u043B\u0430\u043D\u0430 \u0421\u0435\u0432\u0435\u0440\u043E\u0432\u0430"
       objectReference: {fileID: 0}
+    - target: {fileID: 6621817822975932216, guid: c45e6578e79799d489181560bb387b99, type: 3}
+      propertyPath: delayBeforeLoading
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6621817823029950434, guid: c45e6578e79799d489181560bb387b99, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
