@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Inv_Collected : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class Inv_Collected : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {                 
         inventory.AddItem(image, name, gameObject);
+        SceneManager.LoadScene("forest");
     }
 
 }
