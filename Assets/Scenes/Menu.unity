@@ -305,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6621817822975932216, guid: c45e6578e79799d489181560bb387b99, type: 3}
       propertyPath: delayBeforeLoading
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6621817823029950434, guid: c45e6578e79799d489181560bb387b99, type: 3}
       propertyPath: m_AnchorMax.x

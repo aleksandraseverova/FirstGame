@@ -4,6 +4,26 @@ using UnityEngine.SceneManagement;
 
 public class ObjectInteraction : MonoBehaviour
 {
+<<<<<<< HEAD
+   // public GameObject canvas;
+    public string locaci;
+
+    private void Update()
+    {
+       
+    }
+
+    private void Start()
+    {
+       
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        SceneManager.LoadScene(locaci);
+    }
+
+=======
     //public GameObject canvas;
     //public Text displayText;
 
@@ -34,4 +54,5 @@ public class ObjectInteraction : MonoBehaviour
     //{
        
     }
+>>>>>>> main
 }
