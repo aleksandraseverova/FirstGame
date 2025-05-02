@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Muscomorph : Enemy
 {
-    [SerializeField] float speed; //Скорость 
-    [SerializeField] float detectionDistance; //Радиус обнаружение
+    [SerializeField] float speed = 3; //Скорость 
+    [SerializeField] float detectionDistance = 10; //Радиус обнаружение
    
     float patrolTimer;
 
