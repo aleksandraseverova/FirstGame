@@ -6,12 +6,10 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] protected int health = 100;//Здоровье
+    [SerializeField] protected float attackDistance = 3;//
     //[SerializeField] 
-    protected float attackDistance = 3;//
-    //[SerializeField] 
-    protected int damage = 10;
-    //[SerializeField] 
-    protected float cooldown = 2;
+    protected int damage = 10; //Изменение здоровья
+    [SerializeField] protected float cooldown = 1;
     protected GameObject player;
     protected Animator anim;
     protected Rigidbody rb;
@@ -56,8 +54,8 @@ public class Enemy : MonoBehaviour
         //это нужно для того, чтобы не возникало ошибок
         if (player != null)
         {
-            //остальная часть ниже с предыдущих уроков
             distance = Vector3.Distance(transform.position, player.transform.position);
+
             if (!dead)
             {
                 Attack();

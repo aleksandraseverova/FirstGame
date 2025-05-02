@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Werewolf_Legacy : Enemy
 {
-    [SerializeField] float speed; //Скорость 
-    [SerializeField] float detectionDistance; //Радиус обнаружение
+    [SerializeField] float speed = 3 ; //Скорость 
+    [SerializeField] float detectionDistance = 10; //Радиус обнаружение
    
     float patrolTimer;
 
@@ -25,14 +25,14 @@ public class Werewolf_Legacy : Enemy
 
        else if (distance > detectionDistance)
        {
-        //    rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
-        //    patrolTimer += Time.deltaTime;
-        //    anim.SetBool("Run", true);
-        //    if (patrolTimer > 10) 
-        //    {
-        //        transform.Rotate(new Vector3(0, 90, 0));
-        //        patrolTimer = 0;
-        //    }
+           //rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
+           patrolTimer += Time.deltaTime;
+           anim.SetBool("Howl", true);
+           if (patrolTimer > 10) 
+           {
+               transform.Rotate(new Vector3(0, 90, 0));
+               patrolTimer = 0;
+           }
        }
        //иначе...
        else
@@ -53,7 +53,8 @@ public class Werewolf_Legacy : Enemy
            timer = 0;
            //Получаем скрипт игрока и вызываем метод изменения здоровья
            //player.GetComponent<PlayerController>().ChangeHealth(damage);
-           //Активируем анимацию атаки            
+           //Активируем анимацию атаки   
+           anim.SetBool("Run", false);         
            anim.SetBool("Attack", true);
         }
          //Иначе...
