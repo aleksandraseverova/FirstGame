@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 730309336962586593}
   - component: {fileID: 4120341430786270328}
+  - component: {fileID: 8666262606556373769}
   m_Layer: 0
   m_Name: Creep2
   m_TagString: Untagged
@@ -57,6 +58,23 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8799870914345714610}
   m_Enabled: 1
+--- !u!114 &8666262606556373769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6675197641021919374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d0dae1ebe304ab49a3662c0fc065f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  attackDistance: 3
+  cooldown: 1
+  speed: 3
+  detectionDistance: 10
 --- !u!1001 &4463888082102595259
 PrefabInstance:
   m_ObjectHideFlags: 0
