@@ -59,5 +59,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2547632407910942000, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4745510188578495229}
   m_SourcePrefab: {fileID: 100100000, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
+--- !u!1 &133360797255418952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2547632407910942000, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
+  m_PrefabInstance: {fileID: 2486770796053217656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4745510188578495229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133360797255418952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304c7e378dad5fb428f852fbc08c15bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  attackDistance: 3
+  cooldown: 1
+  speed: 3
+  detectionDistance: 10
