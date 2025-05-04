@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arthromahre : Enemy
+public class Deinodonte : Enemy
 {
     [SerializeField] float speed = 3; //Скорость 
     [SerializeField] float detectionDistance = 10; //Радиус обнаружение
@@ -25,9 +25,9 @@ public class Arthromahre : Enemy
 
         else if (distance > detectionDistance)
         {
-            // rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
+            //rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
             patrolTimer += Time.deltaTime;
-            //anim.SetBool("Fly", true);
+            anim.SetBool("Howl", true);
             if (patrolTimer > 10)
             {
                 transform.Rotate(new Vector3(0, 90, 0));
@@ -53,7 +53,8 @@ public class Arthromahre : Enemy
             timer = 0;
             //Получаем скрипт игрока и вызываем метод изменения здоровья
             //player.GetComponent<PlayerController>().ChangeHealth(damage);
-            //Активируем анимацию атаки            
+            //Активируем анимацию атаки   
+            anim.SetBool("Run", false);
             anim.SetBool("Attack", true);
         }
         //Иначе...
