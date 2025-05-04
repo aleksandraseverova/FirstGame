@@ -23,29 +23,21 @@ public class PlayerController : MonoBehaviour
 
         direction = new Vector3(moveHorizontal, 0.0f, moveVertical);
         direction = transform.TransformDirection(direction);
+        
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
             isGrounded = false;
             rb.AddForce(new Vector3 (0, jumpForce, 0), ForceMode.Impulse);
+            anim.SetBool("Jump", true);
         }
 
         if(direction.x !=0 || direction.z !=0)
         {
             anim.SetBool("Walk", true);
-            //Если источник звука не воспроизводит звук и мы на земле, то...
-            // if (!characterSounds.isPlaying && isGrounded)
-            // {
-            //     //Включаем звук
-            //     characterSounds.Play();
-            // }
         }
         if (direction.x == 0 && direction.z == 0)
         {
             anim.SetBool("Walk", false);
-            anim.SetBool("Talking", true);
-
-            //Отключаем звук, если мы останавились
-            // characterSounds.Stop();
         }
     }
 
@@ -57,5 +49,6 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         isGrounded = true;
+        anim.SetBool("Jump", false);
     }
 }
