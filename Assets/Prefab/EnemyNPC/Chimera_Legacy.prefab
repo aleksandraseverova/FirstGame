@@ -2538,6 +2538,8 @@ GameObject:
   - component: {fileID: 5947100645350414760}
   - component: {fileID: 5947100645341100010}
   - component: {fileID: 7972089122642264286}
+  - component: {fileID: 1291575701669750168}
+  - component: {fileID: 1846595011397080175}
   m_Layer: 0
   m_Name: Chimera_Legacy
   m_TagString: Untagged
@@ -2600,6 +2602,54 @@ MonoBehaviour:
   cooldown: 1
   speed: 3
   detectionDistance: 10
+--- !u!65 &1291575701669750168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947100645350442440}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9559042, y: 4.872872, z: 4.9274592}
+  m_Center: {x: -1, y: 1.9364359, z: -1}
+--- !u!54 &1846595011397080175
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947100645350442440}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5947100645350442442
 GameObject:
   m_ObjectHideFlags: 0
