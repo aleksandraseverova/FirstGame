@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arthromahre : Enemy
+public class Pardathrox : Enemy
 {
     [SerializeField] float speed = 3; //Скорость 
     [SerializeField] float detectionDistance = 10; //Радиус обнаружение
