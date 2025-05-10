@@ -27,7 +27,7 @@ public class DemonLord_Legacy : Enemy
        {
            //rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
            patrolTimer += Time.deltaTime;
-           anim.SetBool("Howl", true);
+        //    anim.SetBool("Howl", true);
            if (patrolTimer > 10) 
            {
                transform.Rotate(new Vector3(0, 90, 0));

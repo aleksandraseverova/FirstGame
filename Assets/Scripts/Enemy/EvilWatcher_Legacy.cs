@@ -18,7 +18,7 @@ public class SK_DemonLord : Enemy
            //Разворачиваем врага в сторону игрока
            transform.LookAt(player.transform);
            //Включаем анимацию бега
-           anim.SetBool("Fly", true);
+           anim.SetBool("Run", true);
            //Двигаем вперед      
            rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
        }
@@ -27,7 +27,7 @@ public class SK_DemonLord : Enemy
        {
           // rb.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
            patrolTimer += Time.deltaTime;
-           anim.SetBool("Fly", true);
+           anim.SetBool("Run", true);
            if (patrolTimer > 10) 
            {
                transform.Rotate(new Vector3(0, 90, 0));
@@ -38,7 +38,7 @@ public class SK_DemonLord : Enemy
        else
        {
            //отключаем анимацию бега
-           anim.SetBool("Fly", false);
+           anim.SetBool("Run", false);
        }
     }
 
