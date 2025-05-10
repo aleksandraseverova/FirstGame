@@ -1980,6 +1980,8 @@ GameObject:
   - component: {fileID: 491718}
   - component: {fileID: 9572864}
   - component: {fileID: 1771732931126761258}
+  - component: {fileID: 1915858212041820910}
+  - component: {fileID: 8373903560353390788}
   m_Layer: 0
   m_Name: Arthromahre
   m_TagString: Untagged
@@ -2042,6 +2044,54 @@ MonoBehaviour:
   cooldown: 1
   speed: 3
   detectionDistance: 10
+--- !u!54 &1915858212041820910
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184236}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &8373903560353390788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184236}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.0391474, y: 4.6236877, z: 5.1694775}
+  m_Center: {x: 0.034902573, y: 2.2524986, z: 0.7563839}
 --- !u!1 &184668
 GameObject:
   m_ObjectHideFlags: 0

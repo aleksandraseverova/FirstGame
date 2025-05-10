@@ -1500,6 +1500,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2072694232097773601, guid: 79743e39384a68b4bb000a24492fe7cf, type: 3}
+      propertyPath: movementSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098760109496269920, guid: 79743e39384a68b4bb000a24492fe7cf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.000000009934108
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098760109496269920, guid: 79743e39384a68b4bb000a24492fe7cf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.022569671
+      objectReference: {fileID: 0}
     - target: {fileID: 6814308250791578644, guid: 79743e39384a68b4bb000a24492fe7cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.57299995
@@ -2179,6 +2191,14 @@ PrefabInstance:
     - target: {fileID: 491718, guid: 997a32b3dc00d544b8e7f89f7f792d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771732931126761258, guid: 997a32b3dc00d544b8e7f89f7f792d55, type: 3}
+      propertyPath: attackDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771732931126761258, guid: 997a32b3dc00d544b8e7f89f7f792d55, type: 3}
+      propertyPath: detectionDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3178,6 +3198,10 @@ PrefabInstance:
     - target: {fileID: 411116, guid: 86c737425152f734bb70ab7fc3179d8b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 269165339787796203, guid: 86c737425152f734bb70ab7fc3179d8b, type: 3}
+      propertyPath: attackDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
